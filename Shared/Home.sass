@@ -1,0 +1,125 @@
+.home-container
+  width: 900px
+  margin: 60px auto
+
+h1
+  text-align: center
+
+hr
+  margin: 0px auto 50px
+  width: 60%
+
+.hero-container
+  padding: 20px 0px 10px
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  border-top: 2px solid #eee
+  //border-image: linear-gradient(to right, #ffffff 0%, #eeeeee 25%, #eeeeee 75%, #ffffff 100%)
+
+
+
+  &.first
+    border-top: none
+
+  .hero-box
+    height: 250px
+    width: 200px
+    margin: 10px 0
+    float: left
+    text-align: center
+
+    h3
+      color: white
+      font-size: 16px
+      //text-shadow: 0px 0px 10px black
+      //text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black
+
+    .hero-select
+      height: 200px
+      width: 200px
+      background: #bababa
+      box-sizing: border-box
+      border: 3px solid #eee
+      border-radius: 50%
+      overflow: hidden
+      position: relative
+      transition: all 300ms ease-in-out
+
+      &:hover
+        transform: scale(1.1)
+
+        span
+          background: rgba(0,0,0,0.5)
+
+          .hero-cta
+            opacity: 1
+
+      img
+        height: 100%
+        width: 100%
+        border-radius: 50%
+
+      span
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 100%
+        width: 100%
+        background: rgba(0,0,0,0)
+        border-radius: 50%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 10
+        transition: all 300ms ease-in-out
+
+        .hero-cta
+          display: block
+          height: 35px
+          padding: 2px 15px
+          line-height: 2.2
+          color: white
+          font-weight: 500
+          box-shadow: 0px 0px 0px 1px white, 0px 0px 0px 4px white
+          border-radius: 3px
+          opacity: 0
+          transition: all 300ms ease-in-out
+
+          &:hover
+            background: white
+            box-shadow: 0px 0px 0px 1px black, 0px 0px 0px 4px white
+            color: #444
+
+.home-about-game
+  width: 100%
+  height: 600px
+  margin-bottom: 100px
+  background:
+    image: url(../Imgs/Assets/Home/AboutBG.jpg)
+    size: cover
+    position: center
+  position: relative
+
+  title
+    display: block
+    font-size: 30px
+    position: absolute
+    top: 10%
+    left: 60%
+    padding: 10px
+    border-radius: 8px
+    background: rgba(0,0,0,0.5)
+    box-shadow: 0px 0px 15px black
+
+  p
+    width: 35%
+    font-size: 20px
+    position: absolute
+    top: 20%
+    left: 60%
+    padding: 10px
+    border-radius: 8px
+    background: rgba(0,0,0,0.5)
+    box-shadow: 0px 0px 15px black

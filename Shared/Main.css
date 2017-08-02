@@ -1,0 +1,235 @@
+@font-face {
+		font-family: HaloOutline;
+		src: url("Fonts/Halo Outline.ttf");
+}
+
+@font-face {
+		font-family: Halo;
+		src: url(Fonts/Halo.ttf);
+}
+
+.header-container {
+		height: 600px;
+		width: 100%;
+		margin: 80px 0px;
+		overflow: hidden;
+		position: relative;
+}
+
+.header-container .header-text {
+		color: white;
+		width: 650px;
+		font-family: Halo;
+		font-weight: 600;
+		font-size: 55px;
+		text-align: center;
+		box-sizing: border-box;
+		text-shadow: 2px 2px 20px black;
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		margin-left: -325px;
+}
+
+.header-container .home-header {
+		height: 100%;
+		width: 100%;
+		background-image: url(../Imgs/Assets/Backgrounds/HaloBG.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		position: absolute;
+}
+
+.home-nav {
+		height: 80px;
+		width: 100%;
+		margin: 0;
+		background: #333;
+		box-shadow: 0px 0px 10px white;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 50;
+}
+
+.home-nav ul {
+		list-style: none;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+		font-size: 20px;
+}
+
+.home-nav ul li {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		display: block;
+		height: 100%;
+		width: 25%;
+		color: #ddd;
+		font-size: 23px;
+		font-weight: 500;
+		text-align: center;
+		cursor: pointer;
+		padding: 1.6rem 0;
+}
+
+.home-nav ul li:hover {
+		color: #fff;
+		font-weight: 700;
+}
+
+.home-container {
+		width: 900px;
+		margin: 60px auto;
+}
+
+h1 {
+		text-align: center;
+}
+
+hr {
+		margin: 0px auto 50px;
+		width: 60%;
+}
+
+.hero-container {
+		padding: 20px 0px 10px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		border-top: 2px solid #eee;
+}
+
+.hero-container.first {
+		border-top: none;
+}
+
+.hero-container .hero-box {
+		height: 250px;
+		width: 200px;
+		margin: 10px 0;
+		float: left;
+		text-align: center;
+}
+
+.hero-container .hero-box h3 {
+		color: white;
+		font-size: 16px;
+}
+
+.hero-container .hero-box .hero-select {
+		height: 200px;
+		width: 200px;
+		background: #bababa;
+		box-sizing: border-box;
+		border: 3px solid #eee;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		transition: all 300ms ease-in-out;
+}
+
+.hero-container .hero-box .hero-select:hover {
+		transform: scale(1.1);
+}
+
+.hero-container .hero-box .hero-select:hover span {
+		background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-container .hero-box .hero-select:hover span .hero-cta {
+		opacity: 1;
+}
+
+.hero-container .hero-box .hero-select img {
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+}
+
+.hero-container .hero-box .hero-select span {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		background: transparent;
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		transition: all 300ms ease-in-out;
+}
+
+.hero-container .hero-box .hero-select span .hero-cta {
+		display: block;
+		height: 35px;
+		padding: 2px 15px;
+		line-height: 2.2;
+		color: white;
+		font-weight: 500;
+		box-shadow: 0px 0px 0px 1px white, 0px 0px 0px 4px white;
+		border-radius: 3px;
+		opacity: 0;
+		transition: all 300ms ease-in-out;
+}
+
+.hero-container .hero-box .hero-select span .hero-cta:hover {
+		background: white;
+		box-shadow: 0px 0px 0px 1px black, 0px 0px 0px 4px white;
+		color: #444;
+}
+
+.home-about-game {
+		width: 100%;
+		height: 600px;
+		margin-bottom: 100px;
+		background-image: url(../Imgs/Assets/Home/AboutBG.jpg);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+}
+
+.home-about-game title {
+		display: block;
+		font-size: 30px;
+		position: absolute;
+		top: 10%;
+		left: 60%;
+		padding: 10px;
+		border-radius: 8px;
+		background: rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 0px 15px black;
+}
+
+.home-about-game p {
+		width: 35%;
+		font-size: 20px;
+		position: absolute;
+		top: 20%;
+		left: 60%;
+		padding: 10px;
+		border-radius: 8px;
+		background: rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 0px 15px black;
+}
+
+html, body {
+		height: 100%;
+		margin: 0;
+		font-family: Fira Sans;
+		font-weight: 100;
+		background: #222;
+		color: white;
+}
+
+.scroll {
+		height: 1000px;
+}
